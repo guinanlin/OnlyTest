@@ -43,6 +43,11 @@ export const baseSetSchemas: FormSchema[] = [
     required: true,
   },
   {
+    field: 'field1',
+    label: '测试标签',
+    slot: 'customSlot'
+  },  
+  {
     field: 'position',
     component: 'Input',
     label: '职位',

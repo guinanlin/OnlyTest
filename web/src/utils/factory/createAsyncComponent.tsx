@@ -6,7 +6,21 @@ import {
   // FunctionalComponent, CSSProperties
 } from 'vue';
 import { Spin } from 'ant-design-vue';
-import { noop } from '/@/utils';
+import { noop } from '@/utils';
+
+// const Loading: FunctionalComponent<{ size: 'small' | 'default' | 'large' }> = (props) => {
+//   const style: CSSProperties = {
+//     position: 'absolute',
+//     display: 'flex',
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//   };
+//   return (
+//     <div style={style}>
+//       <Spin spinning={true} size={props.size} />
+//     </div>
+//   );
+// };
 
 interface Options {
   size?: 'default' | 'small' | 'large';

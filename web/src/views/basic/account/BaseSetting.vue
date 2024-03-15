@@ -2,7 +2,11 @@
   <CollapseContainer title="基本设置" :canExpan="false">
     <a-row :gutter="24">
       <a-col :span="14">
-        <BasicForm @register="register" />
+        <BasicForm @register="register" >
+          <template #customSlot>
+          <span>Hello</span>
+        </template>
+          </BasicForm>
       </a-col>
       <a-col :span="10">
         <div class="change-avatar">
